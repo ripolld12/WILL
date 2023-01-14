@@ -13,8 +13,15 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
-
+  var numeroastring=String(num)
+  var numeroalreves=""
+  for (var i=numeroastring.length-1; i>=0; i--){
+    numeroalreves=numeroalreves+numeroastring[i]
+  }
+  if (numeroastring===numeroalreves) return true;
+  return false
 }
+
 
 // No modifiques nada debajo de esta linea //
 
